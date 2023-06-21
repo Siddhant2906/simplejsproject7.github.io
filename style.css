@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(6, 6, 6),rgb(81, 80, 80));
+}
+.calculator{
+    width:40%;
+    height:auto;
+   background-color: white;
+   padding:1rem;
+   border-radius: 20px;
+   background: transparent;
+   box-shadow: 0px 5px 15px white;
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 0.5rem;
+    border-radius: 20px;
+}
+input{
+    width:100%;
+    text-align: right;
+    margin-bottom: 0.5rem;
+    height:2.5rem;
+    font-size:1.5rem;
+    color:white;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    /* border:none; */
+}
+
+.buttons button{
+    padding:0.3rem;
+    /* border-radius: 50%; */
+    width:auto;
+    border:none;
+    font-size: 1rem;
+    cursor: pointer;
+    background: transparent;
+    color:white;
+    box-shadow: 0px 2px 5px white;
+}
+ .buttons .operator{
+    color:greenyellow;
+}
+
+.buttons .equal{
+    background-color:orange;
+}
+
+
+
+
+@media(max-width:650px){
+    /* .buttons button{
+        font-size:0.8rem;
+    } */
+    .calculator{
+        width:55%;
+    }
+}
+
+@media(max-width:450px){
+    .buttons button{
+        font-size:0.5rem;
+    }
+
+    .calculator{
+        width:60%;
+    }
+}
+
+
